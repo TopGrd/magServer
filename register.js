@@ -5,6 +5,7 @@ const mapControllers = (router, dir) => {
   let controllers = fs.readdirSync(`${__dirname}/${dir}`).filter(file => {
     return file.endsWith('.js')
   })
+  
   controllers.forEach(f => {
     console.log(`[INFO] process controller ${f}`)
     let controller = require(`${__dirname}/${dir}/${f}`)

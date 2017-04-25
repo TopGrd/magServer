@@ -1,6 +1,5 @@
 const sanitizeHtml = require('sanitize-html')
 const async = require('async')
-const queue = require('../config/task').queue
 const domConfig = require('../config/dom')
 const fetch = require('./worker')
 
